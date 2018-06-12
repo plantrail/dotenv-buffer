@@ -1,39 +1,20 @@
 {
-  "name": "dotenv",
-  "version": "6.0.0",
-  "description": "Loads environment variables from .env file",
+  "name": "dotenv-buffer",
+  "version": "1.0.0",
+  "description": "Loads environment variables from buffer",
   "main": "lib/main.js",
   "scripts": {
-    "pretest": "npm run lint",
-    "test": "tap tests/*.js --100",
-    "lint": "standard",
-    "postlint": "npm run lint-md",
-    "lint-md": "standard-markdown"
+    "test": "./node_modules/.bin/tape ./test/*.js | ./node_modules/.bin/tap-spec",
+    "cover": "clear && ./node_modules/.bin/nyc --all --reporter=lcov ./node_modules/.bin/tape ./test/*.js && open ./coverage/lcov-report/index.html"
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/motdotla/dotenv.git"
-  },
-  "keywords": [
-    "dotenv",
-    "env",
-    ".env",
-    "environment",
-    "variables",
-    "config",
-    "settings"
-  ],
   "readmeFilename": "README.md",
-  "author": "scottmotte",
+  "author": "scottmotte, forked and changed by Michael Sageryd",
   "license": "BSD-2-Clause",
   "devDependencies": {
-    "sinon": "^5.0.2",
-    "standard": "^11.0.1",
-    "standard-markdown": "^4.0.2",
-    "tap": "^11.1.4"
+    "nyc": "^11.8.0",
+    "pre-commit": "^1.2.2",
+    "tap-spec": "^4.1.2",
+    "tape": "^4.9.0"
   },
-  "dependencies": {},
-  "engines": {
-    "node": ">=6"
-  }
+  "dependencies": {}
 }
