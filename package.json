@@ -1,6 +1,6 @@
 {
-  "name": "dotenv-buffer",
-  "version": "1.0.0",
+  "name": "@svenworks/dotenv-buffer",
+  "version": "1.0.1",
   "description": "Loads environment variables from buffer",
   "main": "lib/main.js",
   "scripts": {
