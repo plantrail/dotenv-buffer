@@ -1,6 +1,6 @@
 {
-  "name": "@svenworks/dotenv-buffer",
-  "version": "1.0.1",
+  "name": "@plantrail/dotenv-buffer",
+  "version": "1.0.2",
   "description": "Loads environment variables from buffer",
   "main": "lib/main.js",
   "scripts": {
