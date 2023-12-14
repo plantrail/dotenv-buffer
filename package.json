@@ -1,20 +1,19 @@
 {
   "name": "@plantrail/dotenv-buffer",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Loads environment variables from buffer",
   "main": "lib/main.js",
   "scripts": {
-    "test": "./node_modules/.bin/tape ./test/*.js | ./node_modules/.bin/tap-spec",
-    "cover": "clear && ./node_modules/.bin/nyc --all --reporter=lcov ./node_modules/.bin/tape ./test/*.js && open ./coverage/lcov-report/index.html"
+    "test": "./node_modules/.bin/tape ./test/*.js | tap-mocha-reporter spec"
   },
   "readmeFilename": "README.md",
   "author": "scottmotte, forked and changed by Michael Sageryd",
   "license": "BSD-2-Clause",
   "devDependencies": {
-    "nyc": "^11.8.0",
     "pre-commit": "^1.2.2",
-    "tap-spec": "^4.1.2",
-    "tape": "^4.9.0"
+    "tape": "^5.7.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "tap-mocha-reporter": "^5.0.4"
+  }
 }
